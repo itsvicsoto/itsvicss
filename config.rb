@@ -2,8 +2,9 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "../application/css"
-sass_dir = "scss"
+css_dir = "../../application/css"
+# sass_dir = "scss-jonathanpath"
+sass_dir = "scss-inuitcss"
 images_dir = "img"
 javascripts_dir = "js"
 fonts_dir = "fonts"
