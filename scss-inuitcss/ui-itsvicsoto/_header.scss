@@ -1,0 +1,47 @@
+.page-header {
+  padding: 10px 20px;
+
+  @include media-query(desk) {
+    padding: 20px 40px;
+    height: 300px;
+  }
+
+  a { color: #fff; }
+}
+
+.page-header__masthead {
+  background: url(https://unsplash.com/photos/HzaT5l4Fzqc/download);
+  background-size: cover;
+
+
+  @include media-query(lap-and-up) {
+    height: 300px;
+  }
+  @include media-query(desk) {
+    height: 500px;
+    background-position-y: -150px;
+  }
+}
+
+
+.page-nav {
+  @extend .cf;
+}
+
+.page-nav__logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.page-nav__linklist {
+
+}
+
+.page-nav__linkitem {
+  padding: 20px;
+}
