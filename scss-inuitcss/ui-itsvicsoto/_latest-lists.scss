@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #LATEST_LISTS
+\*------------------------------------*/
+
+.latest-lists {}
+
+    .latest-lists__heading {
+        @include single-transition(all, 250ms);
+        margin: 0;
+        padding: 0 10px;
+        color: $uiBrandColor;
+        outline: 1px solid #E6E6E6;
+        font-weight: 200;
+        text-align: center;
+
+        &:hover {
+            outline: 1px solid $uiBrandColor;
+            color: $uiBrandColorHighlight;
+        }
+
+    }
+
+    /**
+     *
+     * Latest Lists
+     *
+     * <ul>
+     *     <li>
+     *         .meta
+     *         .link
+     *     </li>
+     * </ul>
+     *
+     */
+
+    .latest-lists__posts-container {
+        padding-top: 50px;
+    }
+
+    .latest-lists__posts {}
+
+        .latest-lists__items {
+
+            .meta {}
+
+            .link {}
+        }
+
