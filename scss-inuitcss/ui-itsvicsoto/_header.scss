@@ -14,7 +14,6 @@
 }
 
   .page-header__masthead {
-    margin-bottom: 20px;
     background: url(https://unsplash.com/photos/HzaT5l4Fzqc/download);
     background-size: cover;
 
@@ -24,7 +23,6 @@
 
     @include media-query(desk) {
       height: 500px;
-      margin-bottom: 40px;
       background-position-y: -150px;
     }
 

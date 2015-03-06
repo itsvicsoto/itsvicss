@@ -20,26 +20,24 @@
 
     }
 
-    /**
-     *
-     * Latest Lists
-     *
-     * <ul>
-     *     <li>
-     *         .meta
-     *         .link
-     *     </li>
-     * </ul>
-     *
-     */
-
     .latest-lists__posts-container {
-        padding-top: 50px;
+        padding: 20px 0;
     }
 
-    .latest-lists__posts {}
+    // ul>li>[ meta stuff ]
+    .latest-lists__posts {
+        margin: 0;
+        list-style: none;
+    }
 
         .latest-lists__items {
+            padding-bottom: 30px;
+
+            &:last-child { padding-bottom: 0; }
+
+            .title {
+                font-weight: bold;
+            }
 
             .meta {}
 
