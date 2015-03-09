@@ -32,6 +32,17 @@
     padding: 20px 20px 1px 20px;
     margin-top: 100px;
     text-align: center;
+
+    @include media-query(lap) {
+      padding: 0;
+      margin: 30px auto;
+    }
+
+    @include media-query(palm) {
+      padding: 0;
+      margin: 30px auto;
+    }
+
   }
 
     .page-header__centerfold-inner {
