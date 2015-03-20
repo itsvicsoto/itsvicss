@@ -1,0 +1,100 @@
+.corn {
+
+	h1,h2,h3,h4,h5 {
+		font-family: 'Arvo', serif;
+	}
+
+	.masthead {
+		position: relative;
+		height: 400px;
+		background: url(/images/corn.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 0px -400px;
+		
+		.inner {
+			padding-top: 150px;  
+		    
+		    h1 {
+				display: inline-block;
+				padding: 5px 10px;
+				background: #323232;
+				color: rgb(255, 213, 0);
+		    }
+
+		    p {
+	    	    color: #000000;
+				padding: 5px 10px;
+		    }
+		}
+
+	}
+
+	.navigation {
+		position: absolute;
+		bottom: 0;
+		left: 39%;
+	}
+
+	.navigation-list {
+		margin: 0;
+
+		li {
+			background: #ffd500;
+			padding: 10px 20px;
+			color: #383838;
+			font-weight: bold;
+			position: relative;
+			width: 134px;
+			text-align: center;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -7px;
+				left: 45%;
+				background: #ffd500;
+				border-radius: 40px;
+				width: 20px;
+				height: 20px;
+			}
+
+			&.active {
+				background: #FFEC29;
+
+				&:after {
+					background: #FFEC29;
+				}
+			}
+
+		}
+
+	}
+
+	.content--header {
+		border-bottom: 1px solid #e5e5e5;
+		width: 500px;
+		margin: 10px auto 20px auto;
+
+		h2	 {
+		  margin: 0;
+		  padding: 10px;
+		  text-align: center;
+		}
+	}
+
+	.content--message {
+		width: 500px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.footer {
+		padding: 5px;
+		background-color: #ffd500;
+		text-align: center;
+	}
+
+}
