@@ -1,0 +1,128 @@
+/*!!!!*
+ * SCSS file creating the exam1 to display phones
+ *
+ * This SCSS is written with inspiration from CSSINUIT and
+ * SMACSS & BEM.
+ */
+
+@import "compass/css3/transition";
+
+
+/*------------------------------------*\
+    GLOBAL VARIABLES
+\*------------------------------------*/
+
+$brand-primary: #79589F;
+$brand-primary-accent: #534A93;
+$font-base-color: #fff;
+$font-base-color-invet: #000;
+
+
+/*------------------------------------*\
+    BASE
+\*------------------------------------*/
+
+html, body {
+  margin: 0;
+  padding: 0 0 30px 0;
+  font-size: 16px;
+  font-family: 'Roboto', 'sans serif', 'arial';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+
+.btn {
+  padding: 8px 15px;
+  font-size: 100%;
+  color: $font-base-color;
+  font-weight: 300;
+  border-radius: 4px;
+  border: none;
+  @include transition(all 0.3s ease-in-out);
+}
+
+.btn-primary {
+  @extend .btn;
+  background: $brand-primary-accent;
+
+  &:hover {
+    background: $brand-primary;
+  }
+
+}
+
+
+
+
+/*------------------------------------*\
+    LAYOUT #HEADER
+\*------------------------------------*/
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: $brand-primary;
+  color: $font-base-color;
+}
+
+
+
+/*------------------------------------*\
+    LAYOUT #CONTENT
+\*------------------------------------*/
+
+.content {
+  padding: 0 20px;
+  text-align: center;
+}
+
+
+
+/*------------------------------------*\
+    LAYOUT #FOOTER
+\*------------------------------------*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: $brand-primary;
+  color: $font-base-color;
+}
+
+
+
+/*------------------------------------*\
+    UI-COMPONENT #list
+\*------------------------------------*/
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+  .list__item {
+    padding: 0 0 10px 0;
+    border: 1px solid $brand-primary;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+    .list__title {
+      padding: 10px;
+      background: $brand-primary-accent;
+      color: $font-base-color;
+    }
+
+    .list__button {
+      @extend .btn-primary;
+    }
